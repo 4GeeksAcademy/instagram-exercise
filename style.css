@@ -1,0 +1,129 @@
+/*  NORMA 1:  Todo lo que está escrito más abajo, GANA a lo que está más arriba */
+
+
+h1 {
+    color: crimson;
+}
+
+h1 {
+    /* Esta gana */
+    color: royalblue;
+}
+
+
+
+/* NORMA 2: Lo que es más específico GANA a lo que es menos específico */
+/* Por su ID */
+#superlista {
+    color: lightseagreen;
+}
+
+/* por su etiqueta */
+h2 {
+   color: indigo; 
+}
+
+/* Por su class */
+.lista {
+    color: red;
+}
+
+/* Por su atributo */
+[type="text"] {
+    border: 2px solid black;
+}
+
+/* ======================================= */
+
+
+/* Combinar selectores para añadir especificidad */
+
+h2.lista#loQueSea {
+   color: orange; 
+}
+
+ol li {
+    color: blue;
+}
+
+
+/* ====================================== */
+
+
+/* Box model */
+
+div.box-model {
+    display: block;
+    background-color: hotpink;
+    width: 200px;
+    height: 100px;
+    padding: 20px;
+    border: 2px solid black;
+    margin: 10px 10px 10px 100px;
+}
+
+
+span.box-model {
+    display: inline;
+    background-color: pink;
+    width: 400px;
+    height: 100px;
+    padding: 20px;
+    border: 2px solid black;
+    margin: 50px;
+}
+
+/* Display */
+span.box-model-especial {
+    display: inline-block;
+    background-color: royalblue;
+    color: white;
+    padding: 50px;
+    width: 200px;
+}
+
+/* Display: flex;  */
+
+div.padre {
+    background-color: hotpink;
+    height: 400px;
+    margin-bottom: 2rem;
+
+    display: flex;
+    /* flex-direction: column; */
+
+    /* justify-content: end;
+    justify-content: center;
+    justify-content: space-evenly;
+    justify-content: space-around;
+    justify-content: start;
+    justify-content: space-between; */
+
+
+    /* align-items: start;
+    align-items: end;
+    align-items: stretch;
+    align-items: center; */
+}
+
+div.hijo {
+    background-color: indigo;
+    color: white;
+    border: 2px solid gold;
+    padding: 1rem;
+}
+
+div.hijo-2 {
+    margin-right: auto;
+
+    display: flex;
+}
+
+
+/* Iconos */
+
+.icono-rejilla {
+    color: hotpink;
+    font-size: 3rem;
+}
+
